@@ -22,14 +22,20 @@ h3 {
   margin: 0.5em;
   color: #778899;
 }
+.sideMenuContainer {
+  display: flex;
+  justify-content: flex-end;
+}
 .side-menu {
   display: flex;
   flex-direction: column;
   position: fixed;
   width: 150px;
-  height: 100%;
+  height: 60%;
   background-color: #95f6d2;
-  align-self: flex-end;
+
+  /* align-self: flex-start;
+  margin-right: auto; */
 }
 .banner {
   background-color: tomato;
@@ -72,7 +78,7 @@ h3 {
 
 .see-more-btn {
   width: 100px;
-  margin: auto;
+  margin: 0.5em auto 2em auto;
   display: flex;
 
   /* align-items: center; */

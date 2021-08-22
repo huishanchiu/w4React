@@ -1,11 +1,10 @@
-import Footer from "./footer";
-import Seemore from "./Seemore";
+import React from "react";
 
-const Content = () => {
+const Content = (props) => {
   return (
     <div>
       <div className="banner">
-        <h1>Welcome message</h1>
+        <h1 onClick={props.onClick}>{props.title}</h1>
       </div>
       <div className="main-content">
         <div className="section-column">
@@ -39,9 +38,6 @@ const Content = () => {
           </p>
         </section>
       </div>
-      <button className="see-more-btn">see more</button>
-      <Seemore />
-      <Footer />
     </div>
   );
 };

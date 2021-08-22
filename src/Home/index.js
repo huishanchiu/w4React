@@ -7,12 +7,10 @@ import "./index.css";
 import "./indexFlex.css";
 
 const Home = () => {
-  const [data, setData] = useState([1, 2, 3]);
   return (
     <div>
       <Nav />
       <Content />
-      <SideMenu itemData={data} />
     </div>
   );
 };

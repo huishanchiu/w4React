@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import SideMenu from "./SideMenu";
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <div className="main-header">
       <h1>
@@ -17,7 +18,7 @@ const Nav = () => {
         <Item />
         <Item />
       </div>
-      <a href="#" className="nav-bar">
+      <a href="#" className="nav-bar" onClick={props.onClick}>
         <FontAwesomeIcon icon={fas.faBars} />
       </a>
     </div>
